@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Ubuntu:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: antiquewhite;
+}
+
+nav {
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.container {
+  min-height: 52vh;
+  color: white;
+  background-color: black;
+  font-family: "Varela Round", sans-serif;
+  margin: 23px auto;
+  width: 60%;
+  border-radius: 12px;
+  padding: 18px;
+  background-image: url("bgx.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.bottom {
+  position: sticky;
+  height: 130px;
+  background-color: black;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.icons {
+  margin-top: 14px;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+#progressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.songItemContainer {
+  margin: 25px 0;
+}
+
+.songItem {
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  background-color: white;
+  color: black;
+  margin: 12px 0;
+  border-radius: 34px;
+}
+.songName {
+  font-family: "Varela Round", sans-serif;
+}
+
+.songItem img {
+  width: 43px;
+  margin: 0 10px;
+  border-radius: 34px;
+}
+
+.timestamp {
+  margin: 0 23px;
+}
+.timestamp i {
+  cursor: pointer;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Varela Round", sans-serif;
+}
+
+.songInfo img {
+  width: 40px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+#masterSongName {
+  margin-left: 4px;
+}
+
+.songDuration {
+  margin-bottom: 25px;
+}
+#currentTime {
+  position: absolute;
+  left: 10vw;
+}
+#totalTime {
+  position: absolute;
+  right: 10vw;
+}
